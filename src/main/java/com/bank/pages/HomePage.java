@@ -7,7 +7,7 @@ public class HomePage extends Utility {
     By bankManagerLoginLink = By.xpath("//button[contains(text(),'Bank Manager Login')]");
     By customerLoginLink = By.xpath("//button[normalize-space()='Customer Login']");
 
-
+    By homeLink = By.xpath("//button[contains(text(),'Home')]");
 
     public void clickOnBankManagerLogin(){
         clickOnElement(bankManagerLoginLink);
@@ -17,6 +17,9 @@ public class HomePage extends Utility {
         clickOnElement(customerLoginLink);
     }
 
+    public void clickOnHome(){
+        clickOnElement(homeLink);
+    }
 
 }
 
